@@ -7,7 +7,7 @@ Food = {'Roti': 120,'Naan': 270,'Paratha': 500,'Puri': 130,'Idli': 70,'Dosa':350
         'gulabJamun':180,'Rasgulla':120,'Jalebi':150,'Laddu':200,'Kheer':250,'Barfi':180,'Rasmalai':220,'Halwa':250,'Payasam':230,'mysorePak':220}
 @app.route('/')
 def index():
-    return render_template('diets.html')
+    return render_template('index.html')
 @app.route('/calculate_calories', methods=['POST'])
 def calculateCalories():
     data = request.json
