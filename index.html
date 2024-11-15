@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calorie Tracker</title>
+</head>
+<body>
+    <button onclick="addItem('Roti')">Add Roti</button>
+    <button onclick="addItem('Naan')">Add Naan</button>
+    <!-- Add more buttons as needed -->
+
+    <p id="totalCalories">Total Calories: 0</p>
+
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
